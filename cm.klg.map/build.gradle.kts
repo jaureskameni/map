@@ -74,3 +74,21 @@ dependencies {
 // ── Configuration OpenAPI ────────────────────────────────────────────────────
 val applySpringBootOpenApi: ((Any) -> Unit) by extra
 val deleteBeforeGenerate: ((Task, String) -> Unit) by extra
+
+val mainOpenApiGenerate by tasks.registering(GenerateTask::class) {
+    applySpringBootOpenApi(this)
+    inputSpec.set("$rootDir/specs/openapi/inbound/main.yml")
+    templateDir.set("$rootDir/specs/openapi/templates/spring-boot")
+    apiPackage.set("cm.klg.generated.map.adapter.rest.inbound.api")
+    modelPackage.set("cm.klg.generated.map.adapter.rest.inbound.dto")
+    modelNameSuffix.set("DTO")
+
+    val genDir = "${outputDir.get()}/src/main/java/cm/klg/generated/map/adapter/rest/inbound"
+    deleteBeforeGenerate(this, genDir)
+}
+
+tasks.compileJava {
+    dependsOn(
+        mainOpenApiGenerate,
+    )
+}

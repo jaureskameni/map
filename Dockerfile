@@ -1,4 +1,4 @@
-FROM eclipse-temurin:21-jre-alpine
+FROM eclipse-temurin:25-jre-alpine
 
 RUN apk --no-cache add curl
 
@@ -6,7 +6,7 @@ WORKDIR /app
 
 RUN addgroup -S spring && adduser -S spring -G spring
 
-COPY --chown=spring:spring build/libs/*SNAPSHOT.jar app.jar
+COPY --chown=spring:spring cm.klg.map/build/libs/*SNAPSHOT.jar app.jar
 
 USER spring:spring
 

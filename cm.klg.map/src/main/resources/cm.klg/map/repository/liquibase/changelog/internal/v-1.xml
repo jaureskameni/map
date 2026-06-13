@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+	<changeSet id="MAP-1:1" author="kameni.nguematcha">
+		<createTable tableName="t_city">
+			<column name="c_id" type="varchar(36)">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="c_name" type="VARCHAR(255)" />
+			<column name="c_created_at" type="TIMESTAMP" />
+		</createTable>
+
+		<createTable tableName="t_district">
+			<column name="c_id" type="varchar(36)">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="c_city_id" type="varchar(36)" />
+			<column name="c_name" type="VARCHAR(255)" />
+			<column name="c_created_at" type="TIMESTAMP" />
+		</createTable>
+
+		<addForeignKeyConstraint
+			baseColumnNames="c_city_id" baseTableName="t_district"
+			constraintName="fk_district_city" referencedColumnNames="c_id"
+			referencedTableName="t_city" />
+
+		<createTable tableName="t_quarter">
+			<column name="c_id" type="varchar(36)">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="c_city_id" type="varchar(36)" />
+			<column name="c_district_id" type="varchar(36)" />
+			<column name="c_name" type="VARCHAR(255)" />
+			<column name="c_created_at" type="TIMESTAMP" />
+		</createTable>
+
+		<addForeignKeyConstraint
+			baseColumnNames="c_city_id" baseTableName="t_quarter"
+			constraintName="fk_quarter_city" referencedColumnNames="c_id"
+			referencedTableName="t_city" />
+
+		<addForeignKeyConstraint
+			baseColumnNames="c_district_id" baseTableName="t_quarter"
+			constraintName="fk_quarter_district" referencedColumnNames="c_id"
+			referencedTableName="t_district" />
+	</changeSet>
+</databaseChangeLog>

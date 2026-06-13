@@ -1,0 +1,128 @@
+---
+openapi: "3.0.3"
+info:
+  title: "SERVICE PROVIDER MANAGEMENT REST API"
+  description: "API for managing service provider"
+  version: "0.0.1-SNAPSHOT"
+paths:
+  /cities:
+    get:
+      tags:
+      - "City"
+      summary: "Get All Cities"
+      description: "Get All Cities"
+      operationId: "getAllCities"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/City"
+  /cities/{cityId}/districts:
+    get:
+      tags:
+      - "District"
+      summary: "Get Districts by City"
+      description: "Get Districts by City"
+      operationId: "getDistrictsByCity"
+      parameters:
+      - name: "cityId"
+        in: "path"
+        required: true
+        schema:
+          type: "string"
+          format: "uuid"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/District"
+  /districts/{districtId}/quarters:
+    get:
+      tags:
+      - "Quarter"
+      summary: "Get Quarters by District"
+      description: "Get Quarters by District"
+      operationId: "getQuartersByDistrict"
+      parameters:
+      - name: "districtId"
+        in: "path"
+        required: true
+        schema:
+          type: "string"
+          format: "uuid"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/Quarter"
+components:
+  schemas:
+    District:
+      required:
+      - "id"
+      - "cityId"
+      - "name"
+      - "createdAt"
+      type: "object"
+      properties:
+        id:
+          type: "string"
+          format: "uuid"
+        cityId:
+          type: "string"
+          format: "uuid"
+        name:
+          type: "string"
+        createdAt:
+          type: "string"
+          format: "date-time"
+    Quarter:
+      required:
+      - "id"
+      - "cityId"
+      - "districtId"
+      - "name"
+      - "createdAt"
+      type: "object"
+      properties:
+        id:
+          type: "string"
+          format: "uuid"
+        cityId:
+          type: "string"
+          format: "uuid"
+        districtId:
+          type: "string"
+          format: "uuid"
+        name:
+          type: "string"
+        createdAt:
+          type: "string"
+          format: "date-time"
+    City:
+      type: "object"
+      required:
+      - "id"
+      - "name"
+      - "createdAt"
+      properties:
+        id:
+          type: "string"
+          format: "uuid"
+        name:
+          type: "string"
+        createdAt:
+          type: "string"
+          format: "date-time"

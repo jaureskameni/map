@@ -1,0 +1,2265 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+	<changeSet id="MAP-1:2" author="kameni.nguematcha">
+		<insert tableName="t_city">
+			<column name="c_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_name" value="Douala" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_district">
+			<column name="c_id"
+				value="ca80e4b7-b634-4767-858c-1bb1c73857c1" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_name" value="Douala 1er" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="c5f0b0d8-bc41-49f3-acf3-8103b2e58658" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="ca80e4b7-b634-4767-858c-1bb1c73857c1" />
+			<column name="c_name" value="Akwa" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="5e98a215-1db9-421b-b132-d5c956b06568" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="ca80e4b7-b634-4767-858c-1bb1c73857c1" />
+			<column name="c_name" value="Bonamouti" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="5dfa9305-3d54-44ed-864b-0e666f5f8e6f" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="ca80e4b7-b634-4767-858c-1bb1c73857c1" />
+			<column name="c_name" value="Bonanjo" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="3aeefb9b-bc54-4435-9de7-1466d8c9ac5f" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="ca80e4b7-b634-4767-858c-1bb1c73857c1" />
+			<column name="c_name" value="Grand-Moulin" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="93263eec-5455-49c0-a6ef-ef30cafebc43" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="ca80e4b7-b634-4767-858c-1bb1c73857c1" />
+			<column name="c_name" value="Bali" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="561aefd5-6954-468d-ab04-abea2787ab6c" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="ca80e4b7-b634-4767-858c-1bb1c73857c1" />
+			<column name="c_name" value="Bessengue" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="b0188625-30d2-483e-8d00-88713f38160c" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="ca80e4b7-b634-4767-858c-1bb1c73857c1" />
+			<column name="c_name" value="Deido" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="cfd1167a-5f76-4365-a9a6-a2c16adc354b" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="ca80e4b7-b634-4767-858c-1bb1c73857c1" />
+			<column name="c_name" value="Youpwé" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="996da102-9005-4534-b8ef-364d4ed0f9eb" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="ca80e4b7-b634-4767-858c-1bb1c73857c1" />
+			<column name="c_name" value="Koumassi" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="0e558f0f-dc6b-4b56-95d6-4f315eba3a65" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="ca80e4b7-b634-4767-858c-1bb1c73857c1" />
+			<column name="c_name" value="Njo-Njo" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="8dd0db16-32d2-47bd-8015-53f30a79b3ad" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="ca80e4b7-b634-4767-858c-1bb1c73857c1" />
+			<column name="c_name" value="Joss" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="b67b1c9a-dcf2-48eb-8469-0a5e05b18dae" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="ca80e4b7-b634-4767-858c-1bb1c73857c1" />
+			<column name="c_name" value="Ancienne Gare" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="80c7b715-ab99-47e8-9500-b380058b43ca" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="ca80e4b7-b634-4767-858c-1bb1c73857c1" />
+			<column name="c_name" value="Bonapriso" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="47878d67-54f6-442f-bc38-b26d005a4557" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="ca80e4b7-b634-4767-858c-1bb1c73857c1" />
+			<column name="c_name" value="Canton Bell" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="10861dea-9f8c-42c7-830a-1c2fcb699ad0" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="ca80e4b7-b634-4767-858c-1bb1c73857c1" />
+			<column name="c_name" value="Bonadouma" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="27214563-1d4d-4398-83f7-a445e6dca7d5" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="ca80e4b7-b634-4767-858c-1bb1c73857c1" />
+			<column name="c_name" value="Sandeau" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_district">
+			<column name="c_id"
+				value="c3950c87-f44c-4654-8d03-063c276fa848" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_name" value="Douala 2e" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="a8da693c-bf56-42f1-90b3-5791829dfe02" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c3950c87-f44c-4654-8d03-063c276fa848" />
+			<column name="c_name" value="New Bell" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="8b02bed4-0cf5-4806-b7b2-836256504838" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c3950c87-f44c-4654-8d03-063c276fa848" />
+			<column name="c_name" value="Marché Central" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="f7ca09aa-6110-4f14-923c-fc1a23b9ccb4" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c3950c87-f44c-4654-8d03-063c276fa848" />
+			<column name="c_name" value="Nkololoun" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="2e9931af-294f-442d-a361-ce8717da877e" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c3950c87-f44c-4654-8d03-063c276fa848" />
+			<column name="c_name" value="Ngangue" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="1e86e2a8-a893-4d6e-89c3-cd3001e782cc" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c3950c87-f44c-4654-8d03-063c276fa848" />
+			<column name="c_name" value="Babylone" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="6ead1d1b-bea4-4128-ae85-32cb4d488cef" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c3950c87-f44c-4654-8d03-063c276fa848" />
+			<column name="c_name" value="Source" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="709187b9-3383-4544-b2ae-d8969bd8f368" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c3950c87-f44c-4654-8d03-063c276fa848" />
+			<column name="c_name" value="Kassalafam" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="a5d31635-6611-4ddd-8471-5e72c23ee81b" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c3950c87-f44c-4654-8d03-063c276fa848" />
+			<column name="c_name" value="Nkolmintag" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="dc6e193d-c640-4f8a-9aaf-7eccf97bfff5" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c3950c87-f44c-4654-8d03-063c276fa848" />
+			<column name="c_name" value="Camp Yabassi" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="76f86272-9de5-43a2-adbf-e41253563942" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c3950c87-f44c-4654-8d03-063c276fa848" />
+			<column name="c_name" value="Brazzaville" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="a8e45757-9392-4214-85d5-1229d73adabe" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c3950c87-f44c-4654-8d03-063c276fa848" />
+			<column name="c_name" value="Congo" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_district">
+			<column name="c_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_name" value="Douala 3e" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="9971de2e-1459-4462-ae1d-1e3d34fe7f4e" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Logbaba" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="8f4e016c-beb1-4782-895e-10277f4871aa" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Bobongo" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="97bc5b3d-639d-45e3-bfb3-0685851a7be0" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Ndokoti" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="f93022f1-23a0-492c-bee0-d3205b7b9bed" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Bilongué" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="3c547252-50e2-48c2-a5f6-c4f542e68815" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Bassa" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="669ec8d6-211b-4a14-93e8-87d421f04756" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Soboum" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="e48bf4fc-d567-4d80-8a58-da07b540d06a" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Ndogpassi I" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="5243c3b1-583f-46bf-b093-316975d46c67" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Ndogpassi II" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="344ed347-aa61-46a4-b9a8-81e75abc19d8" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Ndogpassi III" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="e638a7a5-48c3-4f79-bca4-8717ce0084a8" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Oyack" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="4e9da504-ea87-449a-abf6-1637e459d209" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Nyalla" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="4ff05007-97bc-455c-a2c2-a15d334f4e37" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Diboum 1" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="12b4a1f5-0b64-452b-a10d-34dc41965f88" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="PK 8" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="f11305c7-8214-4500-a3aa-6000070e9155" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="PK 9" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="095238ef-95a0-4151-8556-9c1bea1eb8d6" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="PK 10" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="0671844e-3340-49f4-8ed3-6403dee2618d" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="PK 11" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="450a5e74-6f12-4e37-895a-fec7de80f4af" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="PK 12" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="420e0b5c-aec8-4cfd-8191-ceba34610bae" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="PK 13" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="c553d0f9-bb51-4ef8-83d2-c49441900082" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="PK 14" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="3fb9bec1-8b8f-45b3-b2bc-509281022406" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="PK 15" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="6bbc195f-be37-45fd-a2d5-41a23df416fd" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="PK 16" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="f36f3b18-3dc6-43f7-8b78-8af2233cedc8" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="PK 17" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="6129983f-4460-403e-83d0-997f92c6aaea" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="PK 18" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="8358aa2a-96cd-454f-84f8-99e17b574c61" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="PK 19" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="d79c04f6-d54e-4575-8a5d-e567ab798a11" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="PK 20" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="82fc0190-4f38-443b-b911-fd6cc4ba6695" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="PK 21" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="a779fbec-0fd5-4f98-a45a-085fbf3733ab" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Diboum 2" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="92ada0b3-bbfc-46ee-a9c9-4488d1e1a059" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Mbanga-Japoma" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="b23f6712-2424-42ce-bacb-52e8db309c24" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Espoir" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="efd9ef2a-609c-4b05-892d-b0c8e1bd8b7c" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Bakoko" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="0de6f798-7733-4d9f-8ead-8fed0e16910d" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Carrière" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="49d690a8-8fd6-478a-bb44-2c95ad823213" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Ngoma" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="1eba6880-e6b6-480a-865f-7852c56353ed" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Entrée Billes" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="79d02951-80a6-475d-8c00-96fbd257ad93" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Kondi" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="978d008b-aa6d-4dca-9fce-fd2177dacfbf" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Ndoghem" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="e1cd0148-39ef-4623-9db6-9d1c855061e7" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Ndogsimbi" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="c687fb01-8301-4c3a-9aa3-5be4b66e86d8" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Génitaux" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="2066b56c-2c5c-4c56-bd59-addf7f749207" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Ndogbong" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="ef351611-264c-4281-88f4-b323af0ef0fa" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Tergal" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="f589fb5d-2a81-4376-99c5-f043130db418" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Cité des Palmiers" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_district">
+			<column name="c_id"
+				value="7e57ca1f-2326-4524-ab05-43776dd37c79" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_name" value="Douala 4e" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="58ab7c0c-6da4-4024-bcf9-ac782594f537" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="7e57ca1f-2326-4524-ab05-43776dd37c79" />
+			<column name="c_name" value="Bonambappe" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="26389190-d3ef-4ef1-a74d-278c4eda9301" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="7e57ca1f-2326-4524-ab05-43776dd37c79" />
+			<column name="c_name" value="Minkwele" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="d9d844fc-4254-4fa8-b858-01d8591882b2" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="7e57ca1f-2326-4524-ab05-43776dd37c79" />
+			<column name="c_name" value="Bojongo" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="b495ac00-bb5f-4263-bf23-74860a07aa19" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="7e57ca1f-2326-4524-ab05-43776dd37c79" />
+			<column name="c_name" value="Mambanda" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="d569de0f-5d4b-4dd3-b89a-c4ef71d038d4" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="7e57ca1f-2326-4524-ab05-43776dd37c79" />
+			<column name="c_name" value="Mabanda" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="0daaf44d-39ca-41aa-8c74-0538f98cd868" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="7e57ca1f-2326-4524-ab05-43776dd37c79" />
+			<column name="c_name" value="Yabassi" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="c6a475d4-6169-436c-b621-dbfe89242762" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="7e57ca1f-2326-4524-ab05-43776dd37c79" />
+			<column name="c_name" value="Grand-Hangar" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="48173f6f-5def-4131-963b-0ae99d27426a" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="7e57ca1f-2326-4524-ab05-43776dd37c79" />
+			<column name="c_name" value="Besséké" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="f3be0264-2f2b-4990-b703-c43f3d195cf0" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="7e57ca1f-2326-4524-ab05-43776dd37c79" />
+			<column name="c_name" value="Sodiko" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="e18c871f-242e-4729-b415-ce12407ad083" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="7e57ca1f-2326-4524-ab05-43776dd37c79" />
+			<column name="c_name" value="Bonendale" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="f36a82b1-8d70-4cfc-8ae0-31c1ced2d891" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="7e57ca1f-2326-4524-ab05-43776dd37c79" />
+			<column name="c_name" value="Ndobo" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="0bfbfa2b-58c9-45d6-973c-734ab6d9f609" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="7e57ca1f-2326-4524-ab05-43776dd37c79" />
+			<column name="c_name" value="Ndoumbe" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="2d44865c-2e5c-40dc-8cb6-5202bb22e071" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="7e57ca1f-2326-4524-ab05-43776dd37c79" />
+			<column name="c_name" value="Ngwele" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_district">
+			<column name="c_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_name" value="Douala 5e" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="570aab64-5a07-4c1b-bd22-a90a6d9a0c29" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_name" value="Bonamoussadi" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="54a80043-22cf-45b8-b8ed-04f9f3fdcd2f" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_name" value="Ndoghem" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="15639caa-185f-4976-9dd2-f2b41295b6dc" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_name" value="Kotto Village" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="a62d05fe-7d5c-4309-9e9b-2845d6c0b8ea" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_name" value="Kotto Block" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="02f861b7-c290-4bdd-93e3-b8dc05189b6c" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_name" value="Kotto Maetur" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="50404053-30d5-42ff-a989-3d5fdd0a8f5d" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_name" value="Bangue" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="1647daa9-8487-4702-b32b-2dde2ee90558" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_name" value="Makepe Rhône-Poulenc" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="d3ee198d-8633-41cb-beff-a18477b78aa7" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_name" value="Makepe Missoke" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="33a14eff-328c-4586-876e-ae8b7f83c88b" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_name" value="Makepe Douadi" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="3f65631f-df10-465a-a885-89d3f326a8e4" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_name" value="PK 12" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="d0da8f22-40e2-4165-994f-7c4316f59afd" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_name" value="Denver" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="ba23ef8b-c3c0-4932-abe8-ba525a44af74" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_name" value="PK 14" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="aa784a28-937c-44ab-ae27-54661ce0f640" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_name" value="Logpom" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="4f90ee6a-581d-484c-87aa-7232df5fb6b3" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_name" value="Cité SIC" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="064120bb-4438-40db-9ce8-e474da34371c" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_name" value="Lendi" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="c65fad95-733e-4851-b805-b03e7e7eebc9" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_name" value="Bépanda" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="f93822d9-cb48-4cbe-8c8c-d6c3191a0f95" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_name" value="Beedi" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="7efed2b8-5a59-458f-864f-e9a8bf61b902" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_name" value="Yassa" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="77aef831-e15c-4f10-8c7e-2197e20b94ba" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_name" value="Ange-Raphaël" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_district">
+			<column name="c_id"
+				value="13bd3f44-2b57-4ecf-9186-d90620b8594c" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_name" value="Douala 6e" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="82c32451-71e3-470d-8ab3-011e38e9ef38" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="13bd3f44-2b57-4ecf-9186-d90620b8594c" />
+			<column name="c_name" value="Manoka" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="b1e92565-a888-44b2-b1ca-cc351bdc2643" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="13bd3f44-2b57-4ecf-9186-d90620b8594c" />
+			<column name="c_name" value="Samba" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="1dba39a0-6aa1-4218-b1a3-b4a8ed8756a8" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="13bd3f44-2b57-4ecf-9186-d90620b8594c" />
+			<column name="c_name" value="Cap Cameroun" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="f95adcba-4bb5-4c00-bcb1-fac38a586542" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="13bd3f44-2b57-4ecf-9186-d90620b8594c" />
+			<column name="c_name" value="Nyou" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="f1d82770-2c4c-481c-9391-baf5b31f2901" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="13bd3f44-2b57-4ecf-9186-d90620b8594c" />
+			<column name="c_name" value="Ile de Kombo" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="97b5eaf4-ce6b-48a8-906a-b39b557e2068" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="13bd3f44-2b57-4ecf-9186-d90620b8594c" />
+			<column name="c_name" value="Péninsule de Bakassi" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_city">
+			<column name="c_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_name" value="Yaoundé" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_district">
+			<column name="c_id"
+				value="2bf4baf5-f3e2-44e1-a7c7-73ef7ed5c990" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_name" value="Yaoundé I" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="8f0aa7a6-4457-40be-9f64-8dbe9bc70500" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="2bf4baf5-f3e2-44e1-a7c7-73ef7ed5c990" />
+			<column name="c_name" value="Nlongkak" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="05489d6b-be39-4e3b-823c-32a61969285f" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="2bf4baf5-f3e2-44e1-a7c7-73ef7ed5c990" />
+			<column name="c_name" value="Bastos" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="4b733efe-a077-4c15-b2bf-a23d91322844" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="2bf4baf5-f3e2-44e1-a7c7-73ef7ed5c990" />
+			<column name="c_name" value="Emana" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="413c4081-4642-4530-afc7-e1c2e072bf63" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="2bf4baf5-f3e2-44e1-a7c7-73ef7ed5c990" />
+			<column name="c_name" value="Etoudi" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="2cdae6b3-ba32-4cc9-912c-8e109826b84c" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="2bf4baf5-f3e2-44e1-a7c7-73ef7ed5c990" />
+			<column name="c_name" value="Olembé" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="824a8442-f1b0-4a27-a698-d861bb293fb8" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="2bf4baf5-f3e2-44e1-a7c7-73ef7ed5c990" />
+			<column name="c_name" value="Mballa I" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="7216f821-6228-4118-87b4-af0116ea3bf0" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="2bf4baf5-f3e2-44e1-a7c7-73ef7ed5c990" />
+			<column name="c_name" value="Mballa II" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="2ca84e8e-2313-4eae-8e75-2363a98f46f9" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="2bf4baf5-f3e2-44e1-a7c7-73ef7ed5c990" />
+			<column name="c_name" value="Nkolondom" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="05d5a292-00c0-49af-af23-f9aa2a002310" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="2bf4baf5-f3e2-44e1-a7c7-73ef7ed5c990" />
+			<column name="c_name" value="Tongolo" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="72f51929-9644-48f6-9954-9a268939ffed" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="2bf4baf5-f3e2-44e1-a7c7-73ef7ed5c990" />
+			<column name="c_name" value="Nkol-Eton" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="cd0eef72-e0c5-4c4a-bd17-f5ee327ce4d3" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="2bf4baf5-f3e2-44e1-a7c7-73ef7ed5c990" />
+			<column name="c_name" value="Djoungolo" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="37b3b51d-3aaf-4d98-8a5f-50da1e7186fa" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="2bf4baf5-f3e2-44e1-a7c7-73ef7ed5c990" />
+			<column name="c_name" value="Manguier" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="150b8cda-cded-4253-a6d3-4247afe641b2" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="2bf4baf5-f3e2-44e1-a7c7-73ef7ed5c990" />
+			<column name="c_name" value="Elig-Edzoa" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="692c5095-7e5e-4bff-80a5-a15388e39a53" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="2bf4baf5-f3e2-44e1-a7c7-73ef7ed5c990" />
+			<column name="c_name" value="Bata-Nlongkak" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="1b5459de-b68f-4a6a-9333-c6b16f9d935c" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="2bf4baf5-f3e2-44e1-a7c7-73ef7ed5c990" />
+			<column name="c_name" value="Nyom" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="f37cf50c-0b2d-42a2-8f7c-195988076183" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="2bf4baf5-f3e2-44e1-a7c7-73ef7ed5c990" />
+			<column name="c_name" value="Nkolfoulou" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_district">
+			<column name="c_id"
+				value="3bba53f5-0b1e-47d5-8eec-ab09d2b43e35" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_name" value="Yaoundé II" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="cecdaf72-5151-4abe-b3b1-707a14191db9" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="3bba53f5-0b1e-47d5-8eec-ab09d2b43e35" />
+			<column name="c_name" value="Tsinga" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="1178186a-5e71-4b1f-9f66-a35f6f490488" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="3bba53f5-0b1e-47d5-8eec-ab09d2b43e35" />
+			<column name="c_name" value="Mokolo" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="e418b4fc-a97c-4515-b953-1b6d27d05373" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="3bba53f5-0b1e-47d5-8eec-ab09d2b43e35" />
+			<column name="c_name" value="Messa" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="f9e25e75-dfc3-4634-b99a-77aae4200e5a" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="3bba53f5-0b1e-47d5-8eec-ab09d2b43e35" />
+			<column name="c_name" value="La Briqueterie" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="13e6f565-7576-4c18-9943-e1e0c102e41a" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="3bba53f5-0b1e-47d5-8eec-ab09d2b43e35" />
+			<column name="c_name" value="Nkomkana" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="5b3df71b-962a-45f2-94d9-310b325ec237" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="3bba53f5-0b1e-47d5-8eec-ab09d2b43e35" />
+			<column name="c_name" value="Ekoudou" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="716f6c7b-ff91-438c-ab80-c6d22bbf9fa0" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="3bba53f5-0b1e-47d5-8eec-ab09d2b43e35" />
+			<column name="c_name" value="Madagascar" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="77d9e69c-6e45-401f-8297-09a9535d3845" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="3bba53f5-0b1e-47d5-8eec-ab09d2b43e35" />
+			<column name="c_name" value="Azobé" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="e28e3615-f596-41a6-b95b-a74acbbfe191" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="3bba53f5-0b1e-47d5-8eec-ab09d2b43e35" />
+			<column name="c_name" value="Ntoungou" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="a638b4b9-ad41-4409-b8bf-d6d8d1e7226c" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="3bba53f5-0b1e-47d5-8eec-ab09d2b43e35" />
+			<column name="c_name" value="Cité Verte" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="03272bae-9087-41af-8b46-c370a3c2571e" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="3bba53f5-0b1e-47d5-8eec-ab09d2b43e35" />
+			<column name="c_name" value="Carrière" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="786a4ba8-731d-45e3-b85a-3c5e8df7603e" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="3bba53f5-0b1e-47d5-8eec-ab09d2b43e35" />
+			<column name="c_name" value="Febé" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="7507b3f6-9ee6-4c51-a82b-202802a2d3de" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="3bba53f5-0b1e-47d5-8eec-ab09d2b43e35" />
+			<column name="c_name" value="Tsinga-Village" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="f7246d97-9415-40b4-b2b5-e22dcdcbf640" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="3bba53f5-0b1e-47d5-8eec-ab09d2b43e35" />
+			<column name="c_name" value="Bastos" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_district">
+			<column name="c_id"
+				value="e34a248d-2b36-4fde-89ca-2e0501b34b85" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_name" value="Yaoundé III" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="8d10ea46-e449-4c80-9be7-8fad75998e68" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="e34a248d-2b36-4fde-89ca-2e0501b34b85" />
+			<column name="c_name" value="Ngoa-Ekélé" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="19b88837-227b-421a-aff0-237b66c7feaa" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="e34a248d-2b36-4fde-89ca-2e0501b34b85" />
+			<column name="c_name" value="Obili" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="1b86933a-efe4-4d4f-a913-9f2e0a175482" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="e34a248d-2b36-4fde-89ca-2e0501b34b85" />
+			<column name="c_name" value="Melen" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="e5f7eeee-bb96-4b9d-8dea-728f4ad3f315" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="e34a248d-2b36-4fde-89ca-2e0501b34b85" />
+			<column name="c_name" value="Efoulan" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="c198307c-52d7-4ce3-888a-12695c144296" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="e34a248d-2b36-4fde-89ca-2e0501b34b85" />
+			<column name="c_name" value="Nsam" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="b8832768-d95f-40fb-95e0-f45d7959ce9d" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="e34a248d-2b36-4fde-89ca-2e0501b34b85" />
+			<column name="c_name" value="Ahala" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="430cddaa-3ab2-4ba2-960d-152ad303a6f7" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="e34a248d-2b36-4fde-89ca-2e0501b34b85" />
+			<column name="c_name" value="Ntougou" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="f9e8a75e-d58e-4cff-b5c4-5d2b820de6dc" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="e34a248d-2b36-4fde-89ca-2e0501b34b85" />
+			<column name="c_name" value="Ndi-Samba" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="4dd142ee-8ceb-4eea-8c36-79b244845c98" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="e34a248d-2b36-4fde-89ca-2e0501b34b85" />
+			<column name="c_name" value="Olezoa" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="ce43152b-ea84-4613-b1db-bab685b6703a" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="e34a248d-2b36-4fde-89ca-2e0501b34b85" />
+			<column name="c_name" value="Mvolyé" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="d4be58b3-2a10-4336-872e-e877ce9029ac" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="e34a248d-2b36-4fde-89ca-2e0501b34b85" />
+			<column name="c_name" value="Jouvence" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="129a6a9c-d4cc-4264-a872-a2511d3a0311" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="e34a248d-2b36-4fde-89ca-2e0501b34b85" />
+			<column name="c_name" value="Mvan" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="fddf5c5d-be70-4195-89ae-3c47c6efb41f" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="e34a248d-2b36-4fde-89ca-2e0501b34b85" />
+			<column name="c_name" value="Afanoyoa" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="cd1cdb92-2933-49fc-a451-0e37a6c21256" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="e34a248d-2b36-4fde-89ca-2e0501b34b85" />
+			<column name="c_name" value="Émi-Assi" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_district">
+			<column name="c_id"
+				value="d9d9078f-806c-4aff-999a-b7766ee0c532" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_name" value="Yaoundé IV" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="cab3eed6-3859-442a-b4ec-52488a5452f5" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="d9d9078f-806c-4aff-999a-b7766ee0c532" />
+			<column name="c_name" value="Kondengui" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="39ae634f-a006-48ac-a6ed-cfe9ada8a37f" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="d9d9078f-806c-4aff-999a-b7766ee0c532" />
+			<column name="c_name" value="Ekounou" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="04dc4c59-a72c-46be-94a6-caab7bf379d0" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="d9d9078f-806c-4aff-999a-b7766ee0c532" />
+			<column name="c_name" value="Nkoldongo" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="345759e6-9a39-4f8b-9c2a-a5cc3253aeb9" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="d9d9078f-806c-4aff-999a-b7766ee0c532" />
+			<column name="c_name" value="Mvan" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="5c1e8767-1677-4ad9-a53f-278bde903c7c" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="d9d9078f-806c-4aff-999a-b7766ee0c532" />
+			<column name="c_name" value="Odza" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="103c25e3-e6ef-40d1-be34-f61a753b9f74" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="d9d9078f-806c-4aff-999a-b7766ee0c532" />
+			<column name="c_name" value="Awae" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="d0fc7040-75b1-4882-878a-4ec4bddf6363" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="d9d9078f-806c-4aff-999a-b7766ee0c532" />
+			<column name="c_name" value="Mvog-Mbi" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="841fe17d-60fe-4e07-b36d-d0b55c71bfd8" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="d9d9078f-806c-4aff-999a-b7766ee0c532" />
+			<column name="c_name" value="Ekié" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="03f3a60b-a101-435b-92b0-ec7a9b1fc163" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="d9d9078f-806c-4aff-999a-b7766ee0c532" />
+			<column name="c_name" value="Ndamvout" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="4ac3bdf8-8db4-4089-b0b2-c8880bcb2edb" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="d9d9078f-806c-4aff-999a-b7766ee0c532" />
+			<column name="c_name" value="Messamendongo" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="db55fb45-eaf5-40c8-b1d6-fd80852ec79b" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="d9d9078f-806c-4aff-999a-b7766ee0c532" />
+			<column name="c_name" value="Tropicana" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="f05fb2a1-f88c-428b-a541-b4d2a4cafbcf" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="d9d9078f-806c-4aff-999a-b7766ee0c532" />
+			<column name="c_name" value="Biteng" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="8cddf456-82b8-4bad-8689-3d2f45f9743e" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="d9d9078f-806c-4aff-999a-b7766ee0c532" />
+			<column name="c_name" value="Mimboman" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="4fa4dbfb-74e3-4f9f-af86-4e47b50911e7" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="d9d9078f-806c-4aff-999a-b7766ee0c532" />
+			<column name="c_name" value="Nvog-Belinga" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="ced9c666-a9b9-4b57-b0a1-f5fb8c42a5bb" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="d9d9078f-806c-4aff-999a-b7766ee0c532" />
+			<column name="c_name" value="Nkolfoulou" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_district">
+			<column name="c_id"
+				value="09dd282f-f2fb-4f0d-b34b-c4b1f43285f5" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_name" value="Yaoundé V" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="f2a6079f-9e38-4662-b00a-2ecab1fc4b0e" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="09dd282f-f2fb-4f0d-b34b-c4b1f43285f5" />
+			<column name="c_name" value="Essos" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="b8441a2b-6be6-44bd-80bd-c8f40b865e42" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="09dd282f-f2fb-4f0d-b34b-c4b1f43285f5" />
+			<column name="c_name" value="Mvog-Ada" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="419237ab-344e-4761-9a1a-55b98cb80b17" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="09dd282f-f2fb-4f0d-b34b-c4b1f43285f5" />
+			<column name="c_name" value="Ngousso" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="b35432e8-761b-4f9c-a887-05f7639dfda0" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="09dd282f-f2fb-4f0d-b34b-c4b1f43285f5" />
+			<column name="c_name" value="Omnisports" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="06307688-d25e-46f8-80e4-7945e35e018e" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="09dd282f-f2fb-4f0d-b34b-c4b1f43285f5" />
+			<column name="c_name" value="Quartier Fouda" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="c845956c-a7a2-44c1-9a2f-0f7395930f86" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="09dd282f-f2fb-4f0d-b34b-c4b1f43285f5" />
+			<column name="c_name" value="Éleveur" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="52ad753b-273c-4d49-9820-cffab9dbd6ad" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="09dd282f-f2fb-4f0d-b34b-c4b1f43285f5" />
+			<column name="c_name" value="Nkolmesseng" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="2c9b5869-4631-4e96-a521-80fcac1ec2b8" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="09dd282f-f2fb-4f0d-b34b-c4b1f43285f5" />
+			<column name="c_name" value="Mfandena" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="85761eed-8361-413e-99cc-d0024cd6810a" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="09dd282f-f2fb-4f0d-b34b-c4b1f43285f5" />
+			<column name="c_name" value="Mimboman" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="9ff0a2e6-ac3d-4886-bd1d-f770af9d26fe" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="09dd282f-f2fb-4f0d-b34b-c4b1f43285f5" />
+			<column name="c_name" value="Kondengui" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="42802654-d5c5-4df0-a56c-9afe95e4b512" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="09dd282f-f2fb-4f0d-b34b-c4b1f43285f5" />
+			<column name="c_name" value="Nkolfoulou" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="11d88d13-e8fc-4695-b091-eee20f2c65e1" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="09dd282f-f2fb-4f0d-b34b-c4b1f43285f5" />
+			<column name="c_name" value="Zoumangue" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_district">
+			<column name="c_id"
+				value="b3c1a95e-c702-4a9f-b242-8c194952320b" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_name" value="Yaoundé VI" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="5833ed3e-15d5-46e2-bc92-e13cada91f2d" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="b3c1a95e-c702-4a9f-b242-8c194952320b" />
+			<column name="c_name" value="Biyem-Assi" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="94ac3b97-c9ed-49c9-be22-c524953eac5c" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="b3c1a95e-c702-4a9f-b242-8c194952320b" />
+			<column name="c_name" value="Etoug-Ebe" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="fd0b18b7-cd8f-4925-be3c-9e6134e663a2" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="b3c1a95e-c702-4a9f-b242-8c194952320b" />
+			<column name="c_name" value="Mendong" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="28b0807e-a96f-4a49-8a17-59292f583f90" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="b3c1a95e-c702-4a9f-b242-8c194952320b" />
+			<column name="c_name" value="Nkolbisson" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="9f344b21-94a0-413e-88d5-9d08bf2f53d4" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="b3c1a95e-c702-4a9f-b242-8c194952320b" />
+			<column name="c_name" value="Simbock" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="83961545-60d7-4f9f-8fa4-c120f74350c1" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="b3c1a95e-c702-4a9f-b242-8c194952320b" />
+			<column name="c_name" value="TKC" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="54b0352f-0fe4-4e22-98e5-05efc21b25b5" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="b3c1a95e-c702-4a9f-b242-8c194952320b" />
+			<column name="c_name" value="Rond-Point Express" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="401cf600-90b9-46b2-9eb9-d7310dbeac5a" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="b3c1a95e-c702-4a9f-b242-8c194952320b" />
+			<column name="c_name" value="Carrefour Jouvence" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="7d02120d-67cf-454c-93ba-87463bf4f972" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="b3c1a95e-c702-4a9f-b242-8c194952320b" />
+			<column name="c_name" value="Acacia" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="56b791d4-be51-4c0e-83e9-a1e835616781" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="b3c1a95e-c702-4a9f-b242-8c194952320b" />
+			<column name="c_name" value="Melen" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="610ff18a-bdbf-40ae-8b08-e933d89d3b24" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="b3c1a95e-c702-4a9f-b242-8c194952320b" />
+			<column name="c_name" value="Mvog-Betsi" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="b6664fc1-763b-424a-b94b-d9a4fc06a00a" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="b3c1a95e-c702-4a9f-b242-8c194952320b" />
+			<column name="c_name" value="Damas" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="da0e1e3d-994f-464f-b409-f2206a0d3d43" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="b3c1a95e-c702-4a9f-b242-8c194952320b" />
+			<column name="c_name" value="Ahala" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_district">
+			<column name="c_id"
+				value="1116e367-d0f8-480e-bb04-86c3b649c142" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_name" value="Yaoundé VII" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="8803db7d-787d-453c-a0fb-9abe4571114f" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="1116e367-d0f8-480e-bb04-86c3b649c142" />
+			<column name="c_name" value="Nkolbisson" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="6778b409-cd3d-4d81-9252-7fdb09dabf1e" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="1116e367-d0f8-480e-bb04-86c3b649c142" />
+			<column name="c_name" value="Oyom-Abang" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="c8f641b8-2ff9-4cb5-8906-29677cb9969a" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="1116e367-d0f8-480e-bb04-86c3b649c142" />
+			<column name="c_name" value="Nkolso'o" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="f0107e8c-36e0-4b04-bcfe-e488aabf5fd7" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="1116e367-d0f8-480e-bb04-86c3b649c142" />
+			<column name="c_name" value="Nkolmbong" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="fd2ce3e1-2985-4608-b734-2097673ce5c0" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="1116e367-d0f8-480e-bb04-86c3b649c142" />
+			<column name="c_name" value="Minkoameyos" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="44639f43-b11a-47f1-944b-f08f21999834" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="1116e367-d0f8-480e-bb04-86c3b649c142" />
+			<column name="c_name" value="Nkol-Nkoumou" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="3a876079-e5db-46f2-b6d0-60804af289b8" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="1116e367-d0f8-480e-bb04-86c3b649c142" />
+			<column name="c_name" value="Zamengoé" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="5da60bdc-87ba-4924-a3d0-9226cb2cedaa" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="1116e367-d0f8-480e-bb04-86c3b649c142" />
+			<column name="c_name" value="Lob-Bog" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="b8924e8e-d0a9-43ca-a764-60bf877e42a5" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="1116e367-d0f8-480e-bb04-86c3b649c142" />
+			<column name="c_name" value="Camp SIC Nkolbisson" />
+			<column name="c_created_at" valueDate="2026-06-13T05:41:34" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="16ba67de-a970-4691-ab48-753b0b662f22" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="c47de981-859b-4210-831d-962d2e385082" />
+			<column name="c_name" value="Logbessou" />
+			<column name="c_created_at" valueDate="2026-06-13T05:53:18" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="4e0071fc-1f44-41be-9269-ad4898615a94" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Japoma" />
+			<column name="c_created_at" valueDate="2026-06-13T05:53:18" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="4509c16b-f311-4629-82ce-24ac7a10c897" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Village" />
+			<column name="c_created_at" valueDate="2026-06-13T05:53:18" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="e1ff4c08-ba0f-402d-9161-c049b93a38e0" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Cité-Chirac" />
+			<column name="c_created_at" valueDate="2026-06-13T05:53:18" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="1407d60e-08fa-4f0a-9102-a16173cdfe33" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="7e57ca1f-2326-4524-ab05-43776dd37c79" />
+			<column name="c_name" value="Sodikombo" />
+			<column name="c_created_at" valueDate="2026-06-13T05:53:18" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="09cc2782-831d-49e3-84c3-08be2ea1c6d9" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="2bf4baf5-f3e2-44e1-a7c7-73ef7ed5c990" />
+			<column name="c_name" value="Etoa-Meki" />
+			<column name="c_created_at" valueDate="2026-06-13T05:53:18" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="b1f9e512-e26a-4709-b73f-da45fdc9f1a3" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="2bf4baf5-f3e2-44e1-a7c7-73ef7ed5c990" />
+			<column name="c_name" value="Messassi" />
+			<column name="c_created_at" valueDate="2026-06-13T05:53:18" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="2a1f8121-2be9-453a-93ca-650be57f165b" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="e34a248d-2b36-4fde-89ca-2e0501b34b85" />
+			<column name="c_name" value="Obobogo" />
+			<column name="c_created_at" valueDate="2026-06-13T05:53:18" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="5b1c7c63-16eb-4013-9c73-96e75bb1f899" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="b3c1a95e-c702-4a9f-b242-8c194952320b" />
+			<column name="c_name" value="Sim-Bock" />
+			<column name="c_created_at" valueDate="2026-06-13T05:53:18" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="0a04b943-ca79-4a49-9eab-28d90d7df2f5" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="d9d9078f-806c-4aff-999a-b7766ee0c532" />
+			<column name="c_name" value="Nkoabang" />
+			<column name="c_created_at" valueDate="2026-06-13T05:53:18" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="9a525db2-ef6b-403c-83db-bfb7f4183caf" />
+			<column name="c_city_id"
+				value="e089ffdc-37db-4493-aeff-a0cfabddf04f" />
+			<column name="c_district_id"
+				value="2bf4baf5-f3e2-44e1-a7c7-73ef7ed5c990" />
+			<column name="c_name" value="Soa" />
+			<column name="c_created_at" valueDate="2026-06-13T05:53:18" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="a73c7c80-da0e-43a9-ad66-e8a7755921b7" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Borne 10" />
+			<column name="c_created_at" valueDate="2026-06-13T05:56:50" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="d50e2961-49a4-4081-80f6-b096c1904663" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Hary" />
+			<column name="c_created_at" valueDate="2026-06-13T05:56:50" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="7727518f-b5e5-446d-9a12-547a46759ca4" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Marché Village" />
+			<column name="c_created_at" valueDate="2026-06-13T05:56:50" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="43a37bdb-3e10-4181-87fd-dee9a75242ef" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Yatika" />
+			<column name="c_created_at" valueDate="2026-06-13T05:56:50" />
+		</insert>
+		<insert tableName="t_quarter">
+			<column name="c_id"
+				value="1ff5c9a8-5213-429d-ac52-a64ff6cdd6e0" />
+			<column name="c_city_id"
+				value="e791c94c-225b-4476-a0b2-ef2b6998f13d" />
+			<column name="c_district_id"
+				value="e06f01c7-8bfe-4ec1-aade-0f511f2eab81" />
+			<column name="c_name" value="Boko" />
+			<column name="c_created_at" valueDate="2026-06-13T05:59:24" />
+		</insert>
+	</changeSet>
+</databaseChangeLog>

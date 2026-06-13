@@ -42,8 +42,10 @@ dependencies {
     implementation(libs.springBootStarterValidation)
     implementation(libs.springBootStarterIntegration)
     implementation(libs.springBootStarterLiquibase)
+    implementation("org.springframework.boot:spring-boot-starter-cache")
 
     // Librairies Tierces
+    implementation("com.github.ben-manes.caffeine:caffeine")
     implementation(libs.springdocOpenapi)
     implementation(libs.jakartaMail)
     implementation(libs.slf4jApi)

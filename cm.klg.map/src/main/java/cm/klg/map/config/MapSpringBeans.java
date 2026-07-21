@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MapSpringBeans implements TransactionBeansProvider {
 
-  @Override
+  @Bean
   public DomainToHttpExceptionTranslator domainToHttpExceptionTranslator() {
     return new DefaultDomainToHttpExceptionTranslator();
   }

@@ -1,5 +1,8 @@
 package cm.klg.map.config;
 
+import cm.klg.common.base.config.TransactionBeansProvider;
+import cm.klg.common.base.transaction.DomainToHttpExceptionTranslator;
+import cm.klg.map.adapter.rest.inbound.DefaultDomainToHttpExceptionTranslator;
 import cm.klg.map.application.outbound.CityRepository;
 import cm.klg.map.application.outbound.DistrictRepository;
 import cm.klg.map.application.outbound.QuarterRepository;
@@ -10,7 +13,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class MapSpringBeans {
+public class MapSpringBeans implements TransactionBeansProvider {
+
+  @Override
+  public DomainToHttpExceptionTranslator domainToHttpExceptionTranslator() {
+    return new DefaultDomainToHttpExceptionTranslator();
+  }
 
   @Bean
   public GetAllCitiesUseCase getAllCitiesUseCase(CityRepository cityRepository) {

@@ -21,6 +21,28 @@ paths:
                 type: "array"
                 items:
                   $ref: "#/components/schemas/City"
+  /cities/{cityId}:
+    get:
+      tags:
+      - "City"
+      summary: "Find City by ID"
+      operationId: "getCityById"
+      parameters:
+      - name: "cityId"
+        in: "path"
+        required: true
+        schema:
+          type: "string"
+          format: "uuid"
+      responses:
+        "200":
+          description: "City found"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/City"
+        "404":
+          description: "MAP_404_001"
   /cities/{cityId}/districts:
     get:
       tags:
@@ -44,6 +66,28 @@ paths:
                 type: "array"
                 items:
                   $ref: "#/components/schemas/District"
+  /districts/{districtId}:
+    get:
+      tags:
+      - "District"
+      summary: "Find District by ID"
+      operationId: "getDistrictById"
+      parameters:
+      - name: "districtId"
+        in: "path"
+        required: true
+        schema:
+          type: "string"
+          format: "uuid"
+      responses:
+        "200":
+          description: "District found"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/District"
+        "404":
+          description: "MAP_404_002"
   /districts/{districtId}/quarters:
     get:
       tags:
@@ -67,6 +111,28 @@ paths:
                 type: "array"
                 items:
                   $ref: "#/components/schemas/Quarter"
+  /quarters/{quarterId}:
+    get:
+      tags:
+      - "Quarter"
+      summary: "Find Quarter by ID"
+      operationId: "getQuarterById"
+      parameters:
+      - name: "quarterId"
+        in: "path"
+        required: true
+        schema:
+          type: "string"
+          format: "uuid"
+      responses:
+        "200":
+          description: "Quarter found"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Quarter"
+        "404":
+          description: "MAP_404_003"
 components:
   schemas:
     District:

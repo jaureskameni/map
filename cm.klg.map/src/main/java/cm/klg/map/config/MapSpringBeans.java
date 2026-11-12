@@ -7,7 +7,10 @@ import cm.klg.map.application.outbound.CityRepository;
 import cm.klg.map.application.outbound.DistrictRepository;
 import cm.klg.map.application.outbound.QuarterRepository;
 import cm.klg.map.application.usecase.GetAllCitiesUseCase;
+import cm.klg.map.application.usecase.GetCityByIdUseCase;
+import cm.klg.map.application.usecase.GetDistrictByIdUseCase;
 import cm.klg.map.application.usecase.GetDistrictsByCityUseCase;
+import cm.klg.map.application.usecase.GetQuarterByIdUseCase;
 import cm.klg.map.application.usecase.GetQuartersByDistrictUseCase;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -35,5 +38,20 @@ public class MapSpringBeans implements TransactionBeansProvider {
   public GetQuartersByDistrictUseCase getQuartersByDistrictUseCase(
       QuarterRepository quarterRepository) {
     return new GetQuartersByDistrictUseCase(quarterRepository);
+  }
+
+  @Bean
+  public GetCityByIdUseCase getCityByIdUseCase(CityRepository cityRepository) {
+    return new GetCityByIdUseCase(cityRepository);
+  }
+
+  @Bean
+  public GetDistrictByIdUseCase getDistrictByIdUseCase(DistrictRepository districtRepository) {
+    return new GetDistrictByIdUseCase(districtRepository);
+  }
+
+  @Bean
+  public GetQuarterByIdUseCase getQuarterByIdUseCase(QuarterRepository quarterRepository) {
+    return new GetQuarterByIdUseCase(quarterRepository);
   }
 }

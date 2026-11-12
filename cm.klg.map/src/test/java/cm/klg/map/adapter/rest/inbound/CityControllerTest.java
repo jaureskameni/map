@@ -10,7 +10,9 @@ import static org.springframework.http.HttpStatus.OK;
 import cm.klg.common.base.transaction.UseCaseExecutor;
 import cm.klg.generated.map.adapter.rest.inbound.dto.CityDTO;
 import cm.klg.map.application.usecase.GetAllCitiesUseCase;
+import cm.klg.map.application.usecase.GetCityByIdUseCase;
 import cm.klg.map.application.views.CitiesView1;
+import cm.klg.map.domain.city.CityId;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
@@ -29,6 +31,7 @@ class CityControllerTest {
   @Mock private UseCaseExecutor useCaseExecutor;
   @Mock private RestMapper restMapper;
   @Mock private GetAllCitiesUseCase getAllCitiesUseCase;
+  @Mock private GetCityByIdUseCase getCityByIdUseCase;
 
   @InjectMocks private CityController objectUnderTest;
 
@@ -67,5 +70,30 @@ class CityControllerTest {
     assertThat(result.getFirst().getId()).isEqualTo(cityId);
     verify(getAllCitiesUseCase).execute();
     verify(restMapper).toCityDTO(view);
+  }
+
+  @Test
+  void getCityById_shouldReturnOk_whenCityExists() {
+    var cityId = UUID.randomUUID();
+    var city =
+        new cm.klg.map.domain.city.City(
+            new CityId(cityId),
+            cm.klg.map.domain.city.CityName.from("Douala"),
+            new cm.klg.common.base.domain.CreatedAt(LocalDateTime.now()));
+    when(getCityByIdUseCase.execute(new CityId(cityId))).thenReturn(city);
+    when(restMapper.toCityDTO(city)).thenReturn(new CityDTO().id(cityId).name("Douala"));
+
+    var result =
+        given()
+            .standaloneSetup(objectUnderTest)
+            .when()
+            .get("/cities/{cityId}", cityId)
+            .then()
+            .statusCode(OK.value())
+            .extract()
+            .as(CityDTO.class);
+
+    assertThat(result.getId()).isEqualTo(cityId);
+    verify(getCityByIdUseCase).execute(new CityId(cityId));
   }
 }

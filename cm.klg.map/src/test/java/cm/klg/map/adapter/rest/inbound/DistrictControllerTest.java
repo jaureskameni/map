@@ -9,6 +9,7 @@ import static org.springframework.http.HttpStatus.OK;
 
 import cm.klg.common.base.transaction.UseCaseExecutor;
 import cm.klg.generated.map.adapter.rest.inbound.dto.DistrictDTO;
+import cm.klg.map.application.usecase.GetDistrictByIdUseCase;
 import cm.klg.map.application.usecase.GetDistrictsByCityUseCase;
 import cm.klg.map.application.views.DistrictsView1;
 import cm.klg.map.domain.city.CityId;
@@ -30,6 +31,7 @@ class DistrictControllerTest {
   @Mock private UseCaseExecutor useCaseExecutor;
   @Mock private RestMapper restMapper;
   @Mock private GetDistrictsByCityUseCase getDistrictsByCityUseCase;
+  @Mock private GetDistrictByIdUseCase getDistrictByIdUseCase;
 
   @InjectMocks private DistrictController objectUnderTest;
 
@@ -69,5 +71,33 @@ class DistrictControllerTest {
     assertThat(result.getFirst().getId()).isEqualTo(districtId);
     verify(getDistrictsByCityUseCase).execute(new CityId(cityId));
     verify(restMapper).toDistrictDTO(view);
+  }
+
+  @Test
+  void getDistrictById_shouldReturnOk_whenDistrictExists() {
+    var districtId = UUID.randomUUID();
+    var district =
+        new cm.klg.map.domain.district.District(
+            new cm.klg.map.domain.district.DistrictId(districtId),
+            new cm.klg.map.domain.district.CityId(UUID.randomUUID()),
+            cm.klg.map.domain.district.DistrictName.from("Douala 1er"),
+            new cm.klg.common.base.domain.CreatedAt(LocalDateTime.now()));
+    when(getDistrictByIdUseCase.execute(new cm.klg.map.domain.district.DistrictId(districtId)))
+        .thenReturn(district);
+    when(restMapper.toDistrictDTO(district))
+        .thenReturn(new DistrictDTO().id(districtId).name("Douala 1er"));
+
+    var result =
+        given()
+            .standaloneSetup(objectUnderTest)
+            .when()
+            .get("/districts/{districtId}", districtId)
+            .then()
+            .statusCode(OK.value())
+            .extract()
+            .as(DistrictDTO.class);
+
+    assertThat(result.getId()).isEqualTo(districtId);
+    verify(getDistrictByIdUseCase).execute(new cm.klg.map.domain.district.DistrictId(districtId));
   }
 }
